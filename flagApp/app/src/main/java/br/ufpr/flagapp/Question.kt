@@ -1,6 +1,6 @@
 package br.ufpr.flagapp
 
-class Question {
+data class Question(
     val image: Int,
     val countryName: String
-}
+)
