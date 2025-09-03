@@ -97,19 +97,19 @@ class QuizActivity : AppCompatActivity() {
 
         if (userAnswer.equals(question.countryName, ignoreCase = true)) {
             score += 20
-            tvFeedback.text = "Correto!"
-            resultsSummary.add("Pergunta ${currentQuestionIndex}: Correto")
+            tvFeedback.text = "Acertou!"
+            resultsSummary.add("Pais ${question.countryName}: Acertou")
         } else {
-            tvFeedback.text = "Incorreto! Resposta: ${question.countryName}"
-            resultsSummary.add("Pergunta ${currentQuestionIndex}: Incorreto (Resposta: ${question.countryName})")
+            tvFeedback.text = "Errou! Era ${question.countryName}"
+            resultsSummary.add("Pais ${question.countryName}: Errou")
         }
 
         tvFeedback.visibility = View.VISIBLE
         etAnswer.isEnabled = false
-        btnSubmit.text = "Próxima Pergunta"
+        btnSubmit.text = "Próxima"
 
         if (currentQuestionIndex == questions.size) {
-            btnSubmit.text = "Ver Resultados"
+            btnSubmit.text = "Resultado"
         }
     }
 }
