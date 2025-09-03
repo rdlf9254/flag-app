@@ -67,6 +67,14 @@ class QuizActivity : AppCompatActivity() {
             Question(R.drawable.flag_saomartinho, "São Martinho"),
             Question(R.drawable.flag_wallisefutuna, "Wallis e Futuna"),
 
+            Question(R.drawable.flag_armenia, "Armenia"),
+            Question(R.drawable.flag_australia, "Australia"),
+            Question(R.drawable.flag_bulgaria, "Bulgaria"),
+            Question(R.drawable.flag_croacia, "Croacia"),
+            Question(R.drawable.flag_dinamarca, "Dinamarca"),
+            Question(R.drawable.flag_estonia, "Estônia"),
+            Question(R.drawable.flag_finlandia, "Finlândia"),
+
             )
         questions = allQuestions.shuffled().take(5)
     }
